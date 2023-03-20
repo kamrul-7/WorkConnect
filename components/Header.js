@@ -34,14 +34,14 @@ function Header() {
                 {mounted && (
                     <>
                         {resolvedTheme === "dark" ? (
-                            <Image className="w-16 lg:w-20" src="https://www.pngmart.com/files/5/Work-PNG-Transparent.png" width={80} height={80} alt="" />
+                            <Image src="https://www.pngmart.com/files/5/Work-PNG-Clipart.png" width={45} height={45} alt='' />
                         ) : (
-                            <Image className="w-16 lg:w-20" src="https://www.pngmart.com/files/5/Work-PNG-Transparent.png" width={80} height={80} alt="" />
+                            <Image src="https://www.pngmart.com/files/5/Work-PNG-Clipart.png" width={55} height={55} alt='' />
                         )}
                     </>
                 )}
 
-                <div className="flex items-center hidden lg:block shadow space-x-1 dark:md:bg-gray-700 py-2.5 px-4 rounded w-full">
+                <div className="flex items-center space-x-1 dark:md:bg-gray-700 py-2.5 px-4 rounded w-full">
                     <SearchRoundedIcon />
                     <input
                         type="text"

@@ -7,23 +7,20 @@ import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import Head from "next/head";
 import { getProviders, signIn } from "next-auth/react";
-import Header from "../components/Header";
 
 function Home({ providers }) {
-    // console.log(providers)
     return (
         <div className="space-y-10 relative">
             <Head>
-                <title>WorkConnection</title>
+                <title>LinkedIn</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
-            <header className="flex justify-between px-16 py-4">
-                <div className="relative w-20 h-20 ">
-                    <Image src="https://www.pngmart.com/files/5/Work-PNG-Transparent.png" layout="fill" objectFit="contain" alt='' />
+            <header className="flex justify-around items-center py-4">
+                <div className="relative w-36 h-10">
+                    <Image src="https://www.pngmart.com/files/5/Work-PNG-Clipart.png" layout="fill" objectFit="contain" alt="" />
                 </div>
-                <div className="flex items-center sm:divide-x divide-gray-300 ">
-                    <div className="hidden sm:flex space-x-8 ">
+                <div className="flex items-center sm:divide-x divide-gray-300">
+                    <div className="hidden sm:flex space-x-8 pr-4">
                         <HeaderLink Icon={ExploreIcon} text="Discover" />
                         <HeaderLink Icon={GroupIcon} text="People" />
                         <HeaderLink Icon={OndemandVideoSharpIcon} text="Learning" />
@@ -48,26 +45,26 @@ function Home({ providers }) {
             <main className="flex flex-col xl:flex-row items-center max-w-screen-lg mx-auto">
                 <div className="space-y-6 xl:space-y-10">
                     <h1 className="text-3xl md:text-5xl text-amber-800/80 max-w-xl !leading-snug pl-4 xl:pl-0">
-                        Welcome to professional community
+                        Welcome to your professional community
                     </h1>
-                    <div className="space-y-4 max-w-md mx-auto xl:mx-0">
-                        <div className="intent hover:shadow-xl">
+                    <div className="space-y-4">
+                        <div className="intent">
                             <h2 className="text-xl">Search for a job</h2>
                             <ArrowForwardIosRoundedIcon className="text-gray-700" />
                         </div>
-                        <div className="intent hover:shadow-xl">
+                        <div className="intent">
                             <h2 className="text-xl">Find a person you know</h2>
                             <ArrowForwardIosRoundedIcon className="text-gray-700" />
                         </div>
-                        <div className="intent hover:shadow-xl">
+                        <div className="intent">
                             <h2 className="text-xl">Learn a new skill</h2>
                             <ArrowForwardIosRoundedIcon className="text-gray-700" />
                         </div>
                     </div>
                 </div>
 
-                <div className="relative xl:absolute w-80 h-80 xl:w-[600px] xl:h-[650px] top-14 right-5">
-                    <Image src="https://www.pngmart.com/files/21/Job-Interview-Transparent-PNG.png" alt="" layout="fill" priority />
+                <div className="relative xl:absolute w-80 h-80 xl:w-[650px] xl:h-[650px] top-14 right-5">
+                    <Image src="https://www.pngmart.com/files/21/Job-Interview-Vector-PNG-Clipart.png" layout="fill" priority alt="" />
                 </div>
             </main>
         </div>
@@ -86,4 +83,5 @@ export async function getServerSideProps(context) {
     };
 }
 
-
+                    // <Image src="https://www.pngmart.com/files/5/Work-PNG-Clipart.png"
+                    // <Image src="https://www.pngmart.com/files/21/Job-Interview-Vector-PNG-Clipart.png" layout="fill" alt="" priority />
