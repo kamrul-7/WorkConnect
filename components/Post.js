@@ -4,7 +4,6 @@ import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import ThumbUpOffAltOutlinedIcon from "@mui/icons-material/ThumbUpOffAltOutlined";
 import ThumbUpOffAltRoundedIcon from "@mui/icons-material/ThumbUpOffAltRounded";
 import { useRecoilState } from "recoil";
-import { handlePostState, getPostState } from "../atoms/postAtom";
 import { useState } from "react";
 import DeleteRoundedIcon from "@mui/icons-material/DeleteRounded";
 import ReplyRoundedIcon from "@mui/icons-material/ReplyRounded";
@@ -12,6 +11,7 @@ import CommentOutlinedIcon from "@mui/icons-material/CommentOutlined";
 import { modalState, modalTypeState } from "../atoms/modalAtom";
 import TimeAgo from "timeago-react";
 import { useSession } from "next-auth/react";
+import { getPostState, handlePostState } from "@/atoms/postAtom";
 
 function Post({ post, modalPost }) {
     const { data: session } = useSession();
